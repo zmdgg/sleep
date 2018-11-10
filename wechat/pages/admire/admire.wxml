@@ -1,0 +1,9 @@
+<!--pages/admire/admire.wxml-->
+<view class='admire'>
+  <image src='../../images/AdmireCode.jpg' class='code' bindtap="previewImage">
+  </image>
+  <view class='word'>
+  <text>· 如果本产品对您有帮助，请点击图片并长按，选择识别图中二维码，进行打赏。\n</text> 
+  <text>· 打赏所得资金用于维护服务器的日常开销，为您带来更好地服务！</text>
+  </view>
+</view>

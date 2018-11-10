@@ -1,0 +1,69 @@
+<!--logs.wxml-->
+<view class="container_my">
+  <!--用户信息 -->
+  <view class="userinfo">
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+    <view class="userinfo-word">
+      <text style='color:#BCC2EA;'>{{nickName}}</text>
+      <text style='color:#BCC2EA;'>{{ID}}</text>
+    </view>
+  </view>
+
+  <!--功能 -->
+  <view class="function">
+    <form report-submit bindsubmit="bindFunc">
+      <button class='button_func' hover-class='button_func_hover' bindtap='bindToCalRecord' form-type='submit'>
+      <view class='button_left'>
+      <image src='../../images/my/calendar.png' class='button_img'></image>
+      <text class='button_word'>早睡日历</text>
+      </view>
+        <text class='button_text'>></text>
+      </button>
+      <button class='button_func' hover-class='button_func_hover' bindtap='bindSignRecord' form-type='submit'>
+   <view class='button_left'>
+      <image src='../../images/my/signRecord.png' class='button_img'></image>
+      <text class='button_word'>签到记录</text>
+      </view>
+        <text class='button_text'>></text>
+      </button>
+      <button class='button_func' hover-class='button_func_hover' bindtap='bindToUpdateTime' form-type='submit'>
+   <view class='button_left'>
+      <image src='../../images/my/time.png' class='button_img' ></image>
+      <text class='button_word'>签到时间</text>
+      </view>
+        <text class='button_text'>{{beginTime}}~{{endTime}} ></text>
+      </button>
+      <button class='button_func' hover-class='button_func_hover' bindtap='bindToAdmire' form-type='submit'>
+   <view class='button_left'>
+      <image src='../../images/my/like.png' class='button_img'></image>
+      <text class='button_word'>赞赏</text>
+      </view>
+        <text class='button_text'>></text>
+      </button>
+      <button class='button_func' hover-class='button_func_hover' bindtap='bindToAbout' form-type='submit'>
+   <view class='button_left'>
+      <image src='../../images/my/about.png' class='button_img'></image>
+      <text class='button_word'>关于</text>
+      </view>
+        <text class='button_text'>></text>
+      </button>
+      <button class='button_func' hover-class='button_func_hover' bindtap='bindToFeedback' form-type='submit' id='but' >
+   <view class='button_left'>
+      <image src='../../images/my/feedback.png' class='button_img'></image>
+      <text class='button_word'>意见反馈</text>
+      </view>
+        <text class='button_text'>></text>
+      </button>
+    </form>
+  </view>
+
+  <!--授权 -->
+  <view class="grant">
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"
+    class='grant_but' hover-class='grant_but_hover'>
+      授权登录
+    </button>
+    <view wx:else>请升级微信版本</view>
+  </view>
+
+</view>

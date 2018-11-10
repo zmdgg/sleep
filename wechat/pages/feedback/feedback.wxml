@@ -1,0 +1,13 @@
+<!--pages/sign/sign.wxml-->
+<view class='title_top'>意见反馈：</view>
+<form bindsubmit="bindSignin" report-submit>
+  <view class="textarea-wrp">
+    <textarea placeholder="请写下您对本产品宝贵的建议或遇到的问题" class='word'  name="word"
+    placeholder-class='word_placeholder-class'>
+    </textarea>
+  </view>
+  <button size="{{primarySize}}" class='button_time' formType="submit" 
+  loading='{{loading}}' >
+  提交
+  </button>
+</form>

@@ -1,0 +1,20 @@
+<block wx:for="{{dataList}}" wx:for-item="item" wx:for-index="idx" wx:key="key">
+  <view class='item-container'>
+    <!--这里只是为了展示序列号  -->
+    <view class='item-row'>
+      <text class='item-word'>{{item.word}}</text>
+      <view class='item-title'>
+        <text> {{item.date}} {{item.time}}  </text>
+        <view>
+          <image src='../../images/like.png' class='like'></image>
+          {{item.likes_num}}
+        </view>
+      </view>
+    </view>
+    <view class='item-line' hidden='{{idx==count-1}}'></view>
+  </view>
+</block>
+<view class='bottom'>———————— • ————————</view>
+<loading hidden="{{hidden}}" bindchange="loadingChange">
+  正在加载中
+</loading>

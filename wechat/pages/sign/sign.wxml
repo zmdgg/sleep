@@ -1,0 +1,18 @@
+<!--pages/sign/sign.wxml-->
+<view class='title_top'>睡前心语：</view>
+<form bindsubmit="bindSignin" report-submit>
+  <view class="textarea-wrp">
+    <textarea placeholder="一天即将结束，写下对新的一天的想法" class='word' name="word" placeholder-class='word_placeholder-class'>
+    </textarea>
+  </view>
+  <view class='checkbox-wrp'>
+    <checkbox-group name="isPublic">
+      <checkbox value="public" checked="public" style="transform:scale(.7)" />
+      <text class='chechboxWord' >公开</text>
+    </checkbox-group>
+  </view>
+  <button size="{{primarySize}}" class='button_time' formType="submit"
+  loading='{{loading}}'>
+    发表
+  </button>
+</form>

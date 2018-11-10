@@ -1,0 +1,35 @@
+<!--index.wxml-->
+
+<view class="container">
+  <import src="../../public/html/template.wxml" />
+  <view class="record" style="flex-direction:row;">
+    <view class="flex-item sign_days">
+      <text class='record_word'>累计天数\n</text>
+      <text class='record_data'>{{sign_days}}</text>
+    </view>
+    <view class="flex-item running_days">
+      <text class='record_word'>连续天数\n</text>
+      <text class='record_data'>{{running_days}}</text>
+    </view>
+    <view class="flex-item long_running_days">
+      <text class='record_word'>最长连续\n</text>
+      <text class='record_data'>{{long_running_days}}</text>
+    </view>
+  </view>
+  <view class="motoo">
+    “{{motoo}}”
+  </view>
+  <view class="">
+    <form report-submit bindsubmit="signin">
+      <button form-type='submit' class='form_button' >
+        <image src="{{signinPic}}" class="signin">
+        </image>
+      </button>
+    </form>
+  </view>
+  <view class="sign" bindtap="updateTime">
+    <text class='signWord'>签到时间：</text>
+    <text class="signTime">{{beginTime}}~{{endTime}}</text>
+  </view>
+  <template is="toast" data="{{txt,isShow,icon}}"></template>
+</view>

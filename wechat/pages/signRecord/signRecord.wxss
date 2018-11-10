@@ -1,0 +1,42 @@
+/* pages/find/find.wxss */
+
+/*外层用column*/
+.item-container{
+  display: flex;  
+  flex-direction: column;
+}
+/*内层用row*/
+.item-row{
+  display:flex;
+  flex-direction: column;
+  margin: 20rpx;
+}
+.item-word{
+  font-size: 35rpx;
+ color: #BCC2EA;
+}
+.item-title{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #747DB1;
+  font-size: 30rpx;
+}
+.like{
+  height: 30rpx;
+  width: 30rpx;
+   font-size: 30rpx; 
+}
+.item-time{
+
+}
+.item-line{
+width: 100%;
+border-top:1rpx #434A76 solid;
+}
+.bottom{
+  color: #434A76;
+  font-size: 30rpx;
+  display:flex;
+  justify-content: center;
+}

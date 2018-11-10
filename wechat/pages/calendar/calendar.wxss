@@ -1,0 +1,70 @@
+
+.date-show{  
+    position: relative;  
+    width: 250rpx;  
+    font-family: PingFang-SC-Regular;  
+    font-size: 40rpx;  
+    color: #BCC2EA;  
+    text-align: center;  
+    margin: 59rpx auto 10rpx;  
+}  
+.lt-arrow,.rt-arrow{  
+    position: absolute;  
+    top: 1rpx;  
+    width: 60rpx;  
+    height: 60rpx;  
+}  
+.lt-arrow image,.rt-arrow image{  
+    width: 14rpx;  
+    height: 26rpx;  
+}  
+.lt-arrow{  
+    left: -110rpx;  
+    transform: rotate(180deg);  
+}  
+.rt-arrow{  
+    right: -100rpx;  
+}  
+.header{  
+    font-size: 0;  
+    padding: 0 24rpx;  
+}  
+.header>view{  
+    display: inline-block;  
+    width: 14.285%;  
+    color: #BCC2EA;  
+    font-size: 30rpx;  
+    text-align: center;  
+    border-bottom: 1px solid #747DB1;  
+    padding: 39rpx 0;  
+}  
+.date-box{  
+    font-size: 0;  
+    padding: 10rpx 0;  
+}  
+.date-box>view{  
+    position: position;  
+    display: inline-block;  
+    width: 14.285%;  
+    color: #747DB1;  
+    font-size: 40rpx;  
+    text-align: center;  
+    vertical-align: middle;  
+    margin: 15rpx 0;  
+}  
+.date-head{  
+    height: 60rpx;  
+    line-height: 60rpx;  
+    font-size: 26rpx;  
+}  
+.nowDay .date-head{  
+    width: 60rpx;   
+    text-align: center;  
+    margin: 0 auto; 
+
+    /*下面四行是空心圆，如果要实心圆则background-color*/
+    border-width: 3rpx;
+    border-color:#6D7ACF;  
+    border-style:solid; 
+    border-radius: 50%; 
+}   

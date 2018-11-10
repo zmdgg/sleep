@@ -1,0 +1,107 @@
+
+.container_my {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.userinfo{
+  display: flex;
+  flex-direction: row; 
+  height: 100%;
+  margin-left: 20rpx;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-word{
+  font-size: 35rpx;
+  display: flex;
+  /*下面两行垂直居中*/
+  flex-direction:column; 
+  justify-content: center; 
+  margin-left: 10rpx;
+}
+.function{
+  border-radius: 5%;
+    border-width: 1rpx;
+  border-color:#434A76;
+  border-style:solid; 
+  margin: 20rpx;
+    opacity: 0.9;
+}
+/*按钮 */
+.button_func{
+   background-color: #010101;
+  margin: 10rpx;
+   display: flex;
+  border-radius: 0%;
+   flex-direction:row; 
+
+
+   /*加上下面这一行，在button里面的文字后面再加上<text>,便会两端对齐*/
+   justify-content: space-between;
+}
+.button_left{
+     display: flex;
+   flex-direction:row; 
+   align-items: center;
+   vertical-align: center;
+}
+.button_img{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.button_word{
+   margin-top: 10rpx;
+  margin-bottom: 10rpx;
+   font-size: 30rpx;
+   color: #BCC2EA;
+}
+.button_text{
+   margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+  color: #747DB1;
+}
+.button_func_hover{
+   background-color:#1F233B;
+   display: flex;
+   flex-direction:row; 
+}
+/*去掉按钮指定位置的边框 */
+.button_func::after{
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-color: #292D48;
+ /*border-color: #fff;*/
+ border-radius: 0;
+}
+/*去掉按钮指定位置的边框 */
+#but::after{
+ border: none;
+ border-radius: 0;
+}
+/*授权  */
+.grant{
+  display: flex;
+  margin-top: 60rpx;
+}
+.grant_but{
+  background-color: #010101;
+  color:#BCC2EA;
+  font-size: 30rpx;
+
+}
+.grant_but::after{
+ border-color: #6D7ACF;
+}
+.grant_but_hover{
+   background-color:#1F233B;
+}

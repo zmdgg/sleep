@@ -1,0 +1,13 @@
+<template name="toast">        
+<!--name相当于模板的标识，引用的时候好判断引用哪一个 -->
+     <view class='toast-out' wx:if='{{isShow}}'>　　　　
+    <!--wx：if是条件渲染，使用这个是为了好判断是否显示或隐藏toast -->
+         <view class='toast-in'>　　　　　　
+             <image src='{{icon}}' ></image>    
+              <!--使用的阿里字体图标，根据传入的class值改变显示的图标-->
+             <text class='toast-txt'>
+                 {{txt}}　　　　　　　　　　<!--需要显示的提醒内容 -->
+             </text>
+         </view>
+     </view>
+</template>

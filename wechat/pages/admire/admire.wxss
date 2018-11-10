@@ -1,0 +1,21 @@
+/* pages/admire/admire.wxss */
+
+.admire{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.code{
+  height: 400rpx;
+  width: 400rpx;
+  margin-top:150rpx;
+    border-radius: 50%
+}
+.word{
+  font-size: 30rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  color: #BCC2EA
+}

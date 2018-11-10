@@ -1,0 +1,12 @@
+<!--pages/about/about.wxml-->
+<view class='about'>
+  <image src='../../images/miniCode.jpg' class='code' bindtap="previewImage">
+  </image>
+  <view class='name'>早睡打卡签到</view> 
+  <view class='version'>V0.8.1</view> 
+  <text class='word'>
+     · 本小程序小程序主要提供睡前签到打卡的功能
+     · 您每天打卡时可以发布签到日记
+     · 系统每天定时提醒一次未打卡用户
+  </text>
+</view>

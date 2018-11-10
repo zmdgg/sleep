@@ -1,0 +1,59 @@
+/**index.wxss**/
+
+/*个人记录*/
+.record {
+  display: flex;
+  text-align: center;
+  margin-top:80rpx;
+
+}
+.sign_days {
+  width:200rpx;
+ height: 100%;
+  border-right-width: 3rpx;
+  border-right-color:#434A76;
+  border-right-style:solid; 
+}
+.running_days {
+  width:200rpx;
+  height: 100%;
+}
+.long_running_days {
+  width:200rpx;
+  height: 100%;
+  border-left-width: 3rpx;
+  border-left-color:#434A76;
+  border-left-style:solid; 
+}
+.record_word{
+  color:#BCC2EA;
+  font-size: 30rpx;
+}
+.record_data{
+  color: #747DB1;
+  font-size: 40rpx;
+}
+/*箴言警句*/
+.motoo{
+ margin-top: 80rpx;
+   color: #747DB1;
+}
+.sign{
+  font-size: 40rpx;
+  margin-top:100rpx;
+}
+.signWord{
+    color: #747DB1
+
+}
+.signTime{
+  color: #BCC2EA;
+}
+.signin{
+  width: 200rpx; 
+  height: 200rpx;
+  margin-top: 90px;
+}
+/*修饰form中的button*/
+button.form_button{background-color:transparent;padding:0;margin:0;display:inline;position:static;border:0;padding-left:0;padding-right:0;border-radius:0;font-size:0rpx;color:transparent;}
+button.form_button::after{content:'';width:0;height:0;-webkit-transform:scale(1);transform:scale(1);display:none;background-color:transparent;}

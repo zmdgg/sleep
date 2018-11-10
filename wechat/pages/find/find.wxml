@@ -1,0 +1,34 @@
+<!--pages/find/find.wxml-->
+<block wx:for="{{dataList}}" wx:for-item="item" wx:for-index="idx" wx:key="key">
+  <view class='item-container'>
+    <!--这里只是为了展示序列号  -->
+    <view class='item-row'>
+      <view class='item-column-left'>
+        <image src='{{item.avatarUrl}}' class='item-avatar'></image>
+      </view>
+      <view class='item-column-right'>
+        <text class='item-nickName'>{{item.nickName}}</text>
+        <text class='item-word'>{{item.word}}</text>
+        <view class='item-dateTimeLike'>
+          <text> {{item.date}} {{item.time}}</text>
+          <view class='like'>
+            <form report-submit bindsubmit="bindLike" data-id='{{item.signinID}}'>
+              <button form-type='submit' class='form_button'>
+                <image src='../../images/like{{item.isLike}}.png' 
+                   class='like_pic' mode='aspectFit'></image>
+              </button>
+            </form>
+            {{item.likes_num}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='item-line' hidden='{{idx==dataList.length-1}}'></view>
+  </view>
+</block>
+<view class="weui-loadmore" hidden="{{hasMoreData==false}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+
+<view class='bottom' hidden="{{hasMoreData}}">———————— • ————————</view>

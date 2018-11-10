@@ -1,0 +1,26 @@
+<!--pages/time/time.wxml-->
+<view class='container_my'>
+  <text class='prompt'>设置签到时间</text>
+  <form bindsubmit='bindUpdateTime' report-submit>
+  <view class='function'>
+    <view class='button_my' style='border-bottom-width: 1rpx;border-bottom-color:#292D48;border-bottom-style:solid; '>
+      <picker mode="selector" range="{{sel_beginTime}}" value="{{begin_index}}" bindchange="bindBeginTimeChange">
+        <text class='pick_word'>开始时间:</text>
+        <text class='pick_time'> {{beginTime}}</text>
+      </picker>
+    </view>
+    <view class='button_my' style='border-top: none;'>
+    <picker mode="selector" range="{{sel_endTime}}" value="{{end_index}}"            bindchange="bindEndTimeChange">
+          <text class='pick_word'>结束时间:</text>
+          <text class='pick_time'> {{endTime}}</text>
+      </picker>
+    </view>
+  </view>
+  <button  size="{{primarySize}}"  class='button_time' 
+  form-type="submit">
+  确定
+  </button>
+  <text class='matters'>· 签到时间每日可设置一次。\n</text>
+  <text class='matters'>· 最佳睡眠时间 = 入睡时间 + 充足的睡眠。</text>
+  </form>
+</view>

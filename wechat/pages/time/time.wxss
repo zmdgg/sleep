@@ -1,0 +1,53 @@
+/* pages/time/time.wxss */
+
+.container_my {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.prompt{
+  color: #747DB1;
+  font-size:30rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+}
+.pick_word{
+    margin-left: 20rpx;
+    color:#4A517D;
+}
+.pick_time{
+  margin-left: 80rpx;
+  color: #BCC2EA
+}
+/*按钮 */
+.button_my{
+  height: 75rpx;
+  font-size: 35rpx;
+
+  /*下面三行实现垂直居中 */
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  /*下面三行实现边框 */
+
+}
+
+.button_time{
+    margin-top: 30rpx;
+  background-color: #010101;
+  color:#BCC2EA;
+  font-size: 30rpx;
+  width:80%;
+      margin-bottom: 30rpx;
+}
+.button_time::after{
+ border-color: #6D7ACF;
+}
+
+.matters{
+  color: #434A76;
+  font-size:30rpx;
+  margin-left: 20rpx;
+}

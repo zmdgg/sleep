@@ -1,0 +1,23 @@
+<view class='wrap'>  
+    <view>  
+        <view class='date-show'>  
+            <view class='lt-arrow' bindtap='lastMonth'>  
+               <image src='../../images/right.png' mode='mode'></image>  
+            </view>  
+            {{year}}年{{month}}月  
+            <view class='rt-arrow' bindtap='nextMonth'>  
+               <image src='../../images/right.png' mode='mode'></image>  
+            </view>  
+        </view>  
+    </view>  
+    <view class='header'>  
+        <view wx:for='{{date}}'  wx:key='key'>{{item}}<view></view></view>  
+    </view>  
+    <view class='date-box'>  
+        <view wx:for='{{dateArr}}' class='{{1 == item.isSignin ? "nowDay" : ""}}' data-date='{{item.date}}' wx:key='key'>          
+            <view class='date-head'>  
+                <view>{{item.dateNum}}</view>  
+            </view>  
+        </view>  
+    </view>  
+</view>          

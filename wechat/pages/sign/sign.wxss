@@ -1,0 +1,66 @@
+/* pages/sign/sign.wxss */
+
+/*标题*/
+.title_top{
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+  margin-left: 25rpx;
+  margin-top: 10rpx;
+  color:#BCC2EA;
+}
+/*
+多行文本框,计算好的
+94 +3 +3 =100
+*/
+.word{
+
+  width: 94%;
+  height: 200rpx;
+  font-size: 30rpx;
+  padding: 3% 0;
+  color:#4A517D;
+}
+.word_placeholder-class{
+    color:#4A517D;
+}
+.textarea-wrp{
+  padding: 0 3%;
+  width: 94%;
+
+  /*
+  border-width: 3rpx;
+  border-color:#989898;
+  border-style:solid; 
+  */
+}
+/*
+按钮,计算好的
+94 +3 +3 =100
+*/
+
+.button_time{
+    margin-top: 30rpx;
+  background-color: #010101;
+  color:#BCC2EA;
+  font-size: 30rpx;
+  width:80%;
+      margin-bottom: 30rpx;
+}
+.button_time::after{
+ border-color: #6D7ACF;
+}
+/*
+选择框
+*/
+.checkbox-wrp{
+  /*下面三行居右*/
+  display: flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+.chechboxWord{
+ color: #BCC2EA;
+  margin-right: 20rpx;
+}
